@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--21bce5693-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task7-21bce5693</title>
+    <style>
+        *{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 400;
+        }
+        table {
+            border: 1px solid #A22B55;
+            border-width: 30px;
+            /* margin: 10px; */
+            background-color: #75203F;
+            color: white;
+            width: 500px;
+            height: 500px;
+            padding: 10px;
+        }
+
+        select {
+            height: 2em;
+            background-color: #c0c0c0;
+        }
+        .reg
+        {
+            padding: 0.5em;color:#60594F;
+            font-weight: bolder;
+            font-size: larger;
+            background-color: white;
+            font-size: medium;
+            border-radius: 10px;
+            width: 20em;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <h2 style="color: #483285;">Registration Form</h2>
+        <table boder="1">
+            <form action="ff">
+
+                <tr>
+                    <th>Name</th>
+                    <td><input type="text" placeholder="Your Name"></td>
+                </tr>
+                <tr>
+                    <th>Email</th>
+                    <td><input type="email"placeholder="Your email"></td>
+                </tr>
+                <tr>
+                    <th>Password</th>
+                    <td><input type="password"></td>
+                </tr>
+                <tr>
+                    <th>Phone Number</th>
+                    <td><input type="tel" pattern="[0-9]{10}"></td>
+                </tr>
+                <tr>
+                    <th>Gender</th>
+                    <td>
+                        <label for="Male">Male</label>
+                        <input type="radio" name="Gender">
+                        <label for="Female">Female</label>
+                        <input type="radio" name="Gender">
+                        <label for="other">Other</label>
+                        <input type="radio" name="Gender">
+                    </td>
+                </tr>
+                <tr>
+                    <th>Language</th>
+                    <td><select name="country">
+                            <option value="main" selected="selected">Select Language</option>
+                            <option value="eng">English</option>
+                            <option value="hin">Hindi</option>
+                            <option value="tel">Telugu</option>
+                            <option value="french">French</option>
+                            <option value="urdu">Urdu</option>
+                        </select></td>
+                </tr>
+                <tr>
+                    <th>Zip Code</th>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <th>About</th>
+                    <td>
+                        <textarea name="about" placeholder="Write about yourself"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <th colspan="2">
+                        <input class="reg" type="submit" value="Register">
+                    </th>
+                </tr>
+            </form>
+        </table>
+        <br>
+    </center>
+</body>
+
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--21bce5693-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task6-21bce569</title>
+    <style>
+        .main {
+            border: 1px solid black;
+            margin-top: 30px;
+            width: 500px;
+            height: 600px;
+        }
+
+        img {
+            margin-top: 20px;
+            border-radius: 90%;
+        }
+
+        label {
+            font-size: larger;
+            margin-bottom: 300 px;
+            font-weight: 600;
+            margin-right: 220px;
+        }
+
+        input[type|="text"] {
+            height: 30px;
+            width: 360px;
+            margin-bottom: 20px;
+        }
+
+        input[type|="password"] {
+            height: 30px;
+            width: 360px;
+            margin-bottom: 20px;
+        }
+
+        input[value="Login"] {
+            font-size: x-large;
+            width: 20%;
+            background-color: green;
+            color: white;
+            padding: 10px 10px;
+            transition: 0.3s;
+            border-radius: 5px;
+        }
+
+        input[value="Login"]:hover {
+            background-color: rgb(20, 200, 50);
+        }
+
+        input[value="Cancel"] {
+            font-size: x-large;
+            width: fit-content;
+            margin-right: 150px;
+            color: white;
+            background-color: red;
+            padding: 10px 10px;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+
+        input[value="Cancel"]:hover {
+            /* background-color: transparent; */
+            background-color: rgb(180, 50, 50);
+
+        }
+
+        .foot {
+            margin-top: 10px;
+            background-color: slategray;
+            width: 450px;
+            padding-top: 10px;
+            height: 70px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <div class="main">
+
+            <img src="images.png" alt="profilepic">
+            <br>
+            <label for="uname">Username</label>
+            <br>
+            <input type="text" name="uname" placeholder="Enter Username">
+            <br>
+            <label for="pass">Password</label>
+            <br>
+            <input type="password" name="pass" placeholder="Enter Password">
+            <br>
+            <input type="submit" value="Login">
+            <br>
+            <input type="checkbox" name="rem">
+            <label for="rem">Remember me</label>
+            <br>
+            <div class="foot">
+
+                <input type="submit" value="Cancel">
+                <a href="#">Forget password?</a>
+            </div>
+        </div>
+    </center>
+</body>
+
+</html>
